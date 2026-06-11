@@ -1,8 +1,8 @@
 # OOP Practice
 
-A collection of small Java practice projects focused on core Object-Oriented Programming concepts.
+A collection of Java Object-Oriented Programming practice projects.
 
-This repository contains multiple mini-systems built to practice Java OOP topics such as classes, objects, inheritance, abstract classes, interfaces, polymorphism, encapsulation, enums, custom exceptions, and method overriding.
+This repository contains multiple small Java systems created to practice important OOP concepts such as classes, objects, inheritance, abstraction, interfaces, polymorphism, encapsulation, enums, exception handling, method overriding, and basic system design.
 
 ## Repository Structure
 
@@ -10,12 +10,15 @@ This repository contains multiple mini-systems built to practice Java OOP topics
 OOP_Practice/
 │
 ├── src/
+│   ├── Bank/
 │   ├── IoTCompany/
 │   ├── LibraryManagementSystem/
 │   ├── MarketPlace/
 │   ├── PaymentSystem/
+│   ├── Shapes/
+│   ├── Tests/
 │   └── VehicleRentalCompany/
 │
-├── OOP_Practice.iml
+├── .gitignore
 └── README.md
 ```
