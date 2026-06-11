@@ -6,7 +6,7 @@ public class Customer {
     int id;
     String name;
     double balance;
-    Role role;
+    private Role role;
 
     public Customer( String name, double balance, Role role) {
 
@@ -42,4 +42,14 @@ public class Customer {
         }
 
     }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+
 }

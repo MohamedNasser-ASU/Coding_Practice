@@ -14,7 +14,7 @@ public class Main {
         catch (InvalidPurchaseException e){
             System.out.println("Exception caught: " + e.getMessage());
         }
-        customer.role = Role.BUSINESS_BUYER;
+        customer.setRole(Role.BUSINESS_BUYER);
         try{
             System.out.println("Attempting to buy service as Business Buyer...");
             customer.purchaseService(techSupport);
