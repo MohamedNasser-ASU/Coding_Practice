@@ -7,7 +7,7 @@ int main(void){
     const double constant = 2.20462; 
     int choice;
     double kg, lbs; 
-    printf("Weight converting calculator\n1. Kilograms to pounds\n2.Pounds to Kilograms");
+    printf("Weight converting calculator\n1. Kilograms to pounds\n2. Pounds to Kilograms");
     printf("Enter choice: ");
     scanf(" %d", &choice);
     
