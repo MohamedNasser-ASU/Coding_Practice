@@ -58,5 +58,5 @@ double minus(int x, int y){
 
 double div(int x, int y){
 
-    return x + y;
+    return x / y;
 }
