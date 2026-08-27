@@ -11,19 +11,19 @@ int main(void){
     printf("Enter choice: ");
     scanf(" %d", &choice);
     
-    if choice
+    if (choice)
     {
         printf("Enter weight in Kilograms: ");
-        scanf(" %lf", kg);
+        scanf(" %lf", &kg);
         lbs = kg * constant;
-        printf("%lf kilograms is equal to %lf pounds", kg , lbs);
+        printf("%.2lf kilograms is equal to %.2lf pounds", kg , lbs);
     }
     else {
 
         printf("Enter weight in Pounds: ");
-        scanf(" %lf", lbs);
+        scanf(" %lf", &lbs);
         kg = lbs / constant;
-        printf("%lf pounds is equal to %lf kilograms", lbs, kg);
+        printf("%.2lf pounds is equal to %.2lf kilograms", lbs, kg);
     }
 
 
