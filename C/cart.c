@@ -1,7 +1,7 @@
 // practice 1, shopping cart.
 
 #include <stdio.h>
-
+double total( float price, int qty);
 int main(void){
     
     char word[128];
@@ -14,5 +14,15 @@ int main(void){
     printf("What is the price for each? ");
     scanf("%f", &price);      
 
+    printf("How many do you want? ");
+    scanf("%d", &qty);
+
+    printf("total = %.2lf ", total(price,qty));
+
     return 0;
+}
+
+double total( float price, int qty){
+
+    return price*qty;
 }
