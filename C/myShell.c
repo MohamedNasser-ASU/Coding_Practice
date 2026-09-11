@@ -4,6 +4,8 @@
 #include <string.h>
 #include <wait.h>
 
+int handle_redirect(char *args[]);
+
 int main(int argc, char *argv[])
 {
     while(1){
@@ -44,10 +46,27 @@ int main(int argc, char *argv[])
         }
         else if (pid == 0){
             // we are in child
+            handle_redirect(args);
             // execute args from buffer
             execvp(args[0], args);
         }
 
     }
 
+}
+// 1 if success
+// 0 if no redirect
+// -1 if failed
+int handle_redirect(char *args[]){
+    for(int i = 0; args[i] != NULL; i++){
+        if ( strcmp(args[i], ">") == 0 ) { // '>' found in user's prompt
+            // assume next arg is the file to write to
+            stdout = fopen(args[i+1], "w");
+            if ( stdout == NULL) return -1;
+            // terminate the rest of the command after ">"
+            args[i] = NULL;
+            return 1;
+        }
+    }
+    return 0;
 }
