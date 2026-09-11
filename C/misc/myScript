@@ -1,0 +1,6 @@
+#! /home/june/Code/Coding_Practice/C/output/myshell
+# my shell
+ls   #list
+#print date
+date
+echo ////DONE////
