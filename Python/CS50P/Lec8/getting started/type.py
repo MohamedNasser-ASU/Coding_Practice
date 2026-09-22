@@ -1,0 +1,6 @@
+print(type(50))
+print(type("hi"))
+print(type(2.5))
+print(type([]))
+x = float(5)
+print(type(x))
