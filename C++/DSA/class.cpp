@@ -1,4 +1,5 @@
 #include <iostream>
+#include <new>
 using namespace std;
 
 #define SIZE 50
@@ -11,12 +12,13 @@ public:
     Rectangle() { len = 0; wid = 0;}
     Rectangle(double len, double wid) { this -> len = len; this -> wid = wid; }
      
-    double getArea( double len, double wid) { return len*wid; }
+    double getArea() { return this-> len * this -> wid; }
     
 };
 int main(){
 
-    Rectangle rectangles[50];
     Rectangle *recs = new Rectangle[SIZE];
+    recs[0] = Rectangle(5,3);
+    cout << recs[0].getArea() << endl;
     delete[] recs;
 }
